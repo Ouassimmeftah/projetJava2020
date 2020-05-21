@@ -5,7 +5,7 @@ class Controleur implements ActionListener {
     Modele modele;
     int nAction;
     int nJoueur;
-
+    // un commentaire inultile
     public Controleur(Modele modele){
         this.modele = modele;
     }
