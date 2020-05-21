@@ -34,8 +34,8 @@ public class Modele extends Observable{
 
 
     public void tour(){
-        cellules.choisir;
-        cellules.chercher;
+        //cellules.choisir;
+        //cellules.chercher;
 
         Cellule[] c = new Cellule[2];
         for (int i = 0; i <c.length ; i++) {
