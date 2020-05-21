@@ -9,6 +9,7 @@ public abstract class Observable {
 
         private ArrayList<Observer> observers;
         public Observable() {
+
             this.observers = new ArrayList<Observer>();
         }
         public void addObserver(Observer o) {
