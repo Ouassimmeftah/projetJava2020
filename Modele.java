@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Modele extends Observable{
     public static final int HAUTEUR = 40, LARGEUR =60;
     private Cellule [][] cellules;
@@ -32,28 +34,25 @@ public class Modele extends Observable{
         return getCellules(x,y);
     }
 
-
-    public void tour(){
-        //cellules.choisir;
-        //cellules.chercher;
-
-        Cellule[] c = new Cellule[2];
-        for (int i = 0; i <c.length ; i++) {
-            c[i] = celluleRandom();
-            if (c[i].etat == 0){
-                c[i].inonder();
-            }
-            if(c[i].etat == 1){
-                c[i].submerger();
-            }
-        }
-
-        notifyObservers();
-    }
-
     public Cellule getCellules(int x, int y) {
         return cellules[x][y];
     }
 
+    public void assecherCellule(int x, int y){
+        getCellules(x,y).celluleAssecher();
+    }
+
+    /* retourne une liste de cellules adjacentes
+     *
+     */
+    public Cellule[] celluleAdjacentes(int x, int y){
+        Cellule a[] = new Cellule[3];
+        a[0] = getCellules(x+1,y);
+        a[1] = getCellules(x-1,y);
+        a[2] = getCellules(x,y+1);
+        a[3] = getCellules(x,y-1);
+        return a;
+    }
 
 }
+

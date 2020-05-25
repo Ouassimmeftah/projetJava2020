@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.*;
 
 
 class VueGrille extends JPanel implements Observer {
@@ -15,6 +16,19 @@ class VueGrille extends JPanel implements Observer {
 
     public void update() {
         repaint();
+    }
+
+    public void paint(Graphics g, Cellule c, int x, int y){
+        if(c.etat ==0){
+            g.setColor(Color.green);
+        }else if( c.etat ==1){
+            g.setColor(Color.blue);
+        } else if(c.etat ==2){
+            g.setColor(Color.BLACK);
+        } else {
+            g.setColor(Color.gray);
+        }
+        g.fillRect(x,y,TAILLE,TAILLE);
     }
 
     public void paintCellule(Graphics graphics){
