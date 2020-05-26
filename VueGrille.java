@@ -33,8 +33,10 @@ class VueGrille extends JPanel implements Observer {
 
     public void paintCellule(Graphics graphics){
         super.repaint();
+
         for(int i = 1; i <modele.LARGEUR;i++){
             for(int j = 1; j<=modele.HAUTEUR;j++){
+
                 paint(graphics,modele.getCellules(i,j),(i-1)*TAILLE, (j-1)*TAILLE);
 
             }

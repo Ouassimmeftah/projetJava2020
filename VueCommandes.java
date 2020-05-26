@@ -6,7 +6,7 @@ public class VueCommandes extends JPanel {
     public VueCommandes(Modele modele){
         this.modele = modele;
 
-        JButton boutonAction = new JButton("fin de tour");
+        JButton boutonAction = new JButton("fin d'action Joueur");
         this.add(boutonAction);
         JButton boutonHaut = new JButton("haut");
         this.add(boutonHaut);
@@ -14,15 +14,20 @@ public class VueCommandes extends JPanel {
         this.add(boutonBas);
         JButton boutonGauche = new JButton("Gauche");
         this.add(boutonGauche);
-        JButton boutonDroit = new JButton("bas");
+        JButton boutonDroit = new JButton("droit");
         this.add(boutonDroit);
 
 
         Controleur controleur = new Controleur(modele);
+
         boutonAction.addActionListener(controleur);
+
         boutonHaut.addActionListener(controleur);
+
         boutonBas.addActionListener(controleur);
+
         boutonGauche.addActionListener(controleur);
+
         boutonDroit.addActionListener(controleur);
 
     }

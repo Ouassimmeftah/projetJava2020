@@ -23,12 +23,36 @@ public class Modele extends Observable{
         }
     }
 
-    public void avance(){
-
-        notifyObservers();
+    public Cellule celluleRandom() {
+        int x;
+        int y;
+        int rangeX = LARGEUR - 1 + 1;
+        int rangeY = HAUTEUR - 1 + 1;
+        x = (int) (Math.random() * rangeX) + 1;
+        y = (int) (Math.random() * rangeY) + 1;
+        return getCellules(x, y);
     }
 
-    public Cellule getCellules(int x, int y) {
+        public Cellule getCellules(int x, int y) {
         return cellules[x][y];
     }
+
+    public void assecherCellule(int x, int y){
+        getCellules(x,y).celluleAssecher();
+    }
+
+    /* retourne une liste de cellules adjacentes
+     *
+     */
+
+    public Cellule[] celluleAdjacentes(int x, int y){
+        Cellule a[] = new Cellule[3];
+        a[0] = getCellules(x+1,y);
+        a[1] = getCellules(x-1,y);
+        a[2] = getCellules(x,y+1);
+        a[3] = getCellules(x,y-1);
+        return a;
+    }
+
+
 }
