@@ -20,8 +20,8 @@ Projet en contexte de l'unité d'enseignement Programation Objet et Génie Logic
             int x,y: les coordonnées de cette Cellule
 
         Contructeurs / Méthodes:
-            (*à compléter*)
             constructeur Cellule qui initialise le Modele, les coordonnées x,y et les etats 
+            Methodes IsAMachin qui retourne l'etat de la cellule
 
         (*à compléter*)
         Classe qui represente une Cellule du tableau de jeu
