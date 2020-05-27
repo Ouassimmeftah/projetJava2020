@@ -1,6 +1,6 @@
 
 # Projet Île Interdite en java
-**à rendre pour le 25 mai 2020**
+**à rendre pour le 2 juin 2020**
 
 Projet en contexte de l'unité d'enseignement Programation Objet et Génie Logiciel en 2è année de license informatique de l'université Paris-Sud Saclay
 
@@ -40,6 +40,9 @@ Projet en contexte de l'unité d'enseignement Programation Objet et Génie Logic
             JFrame frame 
             VueGrille grille
             VueCommandes commandes
+        Methodes : 
+                frame.setLocationRelativeTo(null);  // centre la fenetre au milieu de lecran
+
 
         la classe qui créer une fenêtre pour afficher le terrain de jeu pour le Controleur
     ---
