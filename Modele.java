@@ -1,5 +1,6 @@
 public class Modele extends Observable{
-    public static final int HAUTEUR = 40, LARGEUR =60;
+
+    public static final int HAUTEUR = 15, LARGEUR = 20;
     private Cellule[][] cellules;
 
     public Modele(){
@@ -53,6 +54,7 @@ public class Modele extends Observable{
         a[3] = getCellules(x,y-1);
         return a;
     }
+
 
 
 }

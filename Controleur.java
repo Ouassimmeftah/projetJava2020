@@ -132,7 +132,7 @@ class Controleur extends Modele implements ActionListener {
         //move(); //besoin de récupérer une commande clavier / choix de type Direction pour marcher
         //assecher(); // besoin de récupérer une commande clavier / choix de type Direction pour marcher
         recuperer();
-
+        System.out.println("Clic");
         // chercher une clé
         chercher();
 
@@ -143,9 +143,9 @@ class Controleur extends Modele implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e){
+        Object source = e.getSource();
         tour();
     }
-
 
 
 }
