@@ -12,7 +12,7 @@ Projet en contexte de l'unité d'enseignement Programation Objet et Génie Logic
 ---
 ## classes et Fonctionnalités
 
-![Test Image 7](https://gitlab.u-psud.fr/OuassimMinhkha/ouassimminhkha/raw/minh-kha/UML%20Class.png)
+![Test Image 7](https://github.com/Ouassimmeftah/projetJava2020/blob/minh-kha/UML%20Class.png)
 
 ---
 
