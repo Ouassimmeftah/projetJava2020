@@ -4,6 +4,7 @@ public class Cellule {
 
     protected int etat; /** 5 etats possibles : normal 0,inonde 1,submerge 2, heliport 3, zone artefact 4 */
     protected final int x,y;
+    private int element; /**0 rien, 1 feu, 2 eau, 3 terre, 4 vent */
 
 
 
@@ -49,14 +50,10 @@ public class Cellule {
         this.etat = 2;
     }
 
-
-    public void assecher(){
-        // attribut des joueurs courant , numero d'action courante, 2 variables centrales qui voient qui s'occupe de quoi
-        // faire tout ca dans le controleur, etat ds controleur, 6 etats possibles au total
-        etat=0;
-
+    public void eleRandom(){
+        int range = 4 - 1 + 1;
+        int randEle = (int) (Math.random() * range) + 1;
+        this.element = randEle;
     }
-
-
 
 }
